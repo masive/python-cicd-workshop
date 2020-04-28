@@ -13,9 +13,7 @@ jobs:
       - python/save-cache
       - run:
         name: run tests
-        command: |
-          . venv/bin/activate
-          python manage.py test
+        command: ~/.local/bin/pytest
 
 workflows:
   main:
